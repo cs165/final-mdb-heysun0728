@@ -5,10 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>CS193x Final Project</title>
     <link rel="stylesheet" href="/css/style.css"/>
+    <script src="/js/indexView.js" defer></script>
+    <script src="/js/linkView.js" defer></script>
+    <script src="/js/project.js" defer></script>
+    <script src="/js/projectView.js" defer></script>
+    <script src="/js/createProjView.js" defer></script>
+    <script src="/js/app.js" defer></script>
     <script src="/js/script.js" defer></script>
     </script>
   </head>
   <body>
     <!-- TODO(you): Add the HTML necessary to complete your final project. -->
+    <div id="links"></div>
+    <section id="index" >
+      <img id="indexImg" src="image/index.png"></img>
+      <div id="projects"></div>
+      <button id="createBtn">Create New Project</button>
+    </section>
+    <div id="projectView" class="hidden">
+      <div id="top">
+        <a href="#" class="modal-close"></a>
+        <h1 id="title">Project Name</h1>
+        <div class="flex">
+          <div class="flexItem">
+            <p class="subtitle">DURATION</p>
+            <p id="duration" class="content">13 weeks</p>
+            <p class="subtitle">TOOLS</p>
+            <p id="tools" class="content">tool1</br>tool2</br>tool3</p>
+          </div>
+          <div class="flexItem flexItem2">
+            <p class="subtitle">THE CHALLENGES</p>
+            <p id="challenges" class="content">* How can we empower Sanitas to become tangible?</br>* What would the future of insurance look like?
+            </p>
+            <p class="subtitle">OUTPUT</p>
+            <p id="output" class="content">* How can we empower Sanitas to become tangible?</br>* What would the future of insurance look like?</br>* What would the future of insurance look like?ure of insurance look like?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div class="flex">
+          <div class="flexItem">
+            <img id="pImg" src="image/project/book.jpg">
+          </div>
+          <div class="flexItem">
+              <p class="title">What it does?</p>
+              <p id="target" class="content">* How can we empower Sanitas to become tangible? What would the future of insurance look like? What would the future of insurance look like?ure of insurance look like?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="createView" class="hidden">
+      <form id="createform">
+          <h1>Create New Project</h1>
+          <p class="input">Project title:<input type="text" id="pTitle"></p>
+          <p class="input">image url:<input type="text" id="pImg"></p>
+          <p class="input">duration:<input type="text" id="pDur"></p>
+          <p class="input">output:<input type="text" id="pOut"></p>
+          <p class="input">target:<input type="text" id="pTar"></p>
+          <p class="input">tools:<textarea cols="30" rows="5" id="pTool"></textarea></p>
+          <p class="input" >challenges:<textarea cols="30" rows="5" id="pChall"></textarea></p>
+          <input id="sendBtn" type="submit" value="SEND">
+          <button id="cancelBtn" type="button">CANCEL</button>
+      </form>
+    </div>
   </body>
 </html>
