@@ -12,7 +12,6 @@
     <script src="/js/createProjView.js" defer></script>
     <script src="/js/app.js" defer></script>
     <script src="/js/script.js" defer></script>
-    </script>
   </head>
   <body>
     <!-- TODO(you): Add the HTML necessary to complete your final project. -->
@@ -59,7 +58,7 @@
       <form id="createform">
           <h1>Create New Project</h1>
           <p class="input">Project title:<input type="text" id="pTitle"></p>
-          <p class="input">image url:<input type="text" id="pImg"></p>
+          <p class="input">image url:<input type="text" id="pImgUrl"></p>
           <p class="input">duration:<input type="text" id="pDur"></p>
           <p class="input">output:<input type="text" id="pOut"></p>
           <p class="input">target:<input type="text" id="pTar"></p>
@@ -69,5 +68,7 @@
           <button id="cancelBtn" type="button">CANCEL</button>
       </form>
     </div>
+    <section id="login"><div class="g-signin2" data-onsuccess="onSignIn"></div>
+    </section>
   </body>
 </html>

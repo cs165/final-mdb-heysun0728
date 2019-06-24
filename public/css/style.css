@@ -144,6 +144,9 @@ section{
     font-weight: bold;
 }
 .flexItem img{
+    width:80%;
+    max-width:600px;
+    min-width:350px;
     margin:20px;
 }
 .title,

@@ -40,7 +40,7 @@ class CreateProjView{
     saveValuesFromInput() {
         const params = {
             title: document.querySelector("#pTitle").value,
-            img: document.querySelector("#pImg").value,
+            img: document.querySelector("#pImgUrl").value,
             duration: document.querySelector("#pDur").value,
             tools: document.querySelector("#pTool").value,
             challenges: document.querySelector("#pChall").value,

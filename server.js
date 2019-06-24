@@ -24,7 +24,7 @@ async function main() {
   links = db.collection('menu');
   projects = db.collection('projects');
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT || 3000);
   console.log('Server listening on port 3000!');
 };
 
@@ -64,7 +64,6 @@ async function selectProj(req, res) {
   res.json(result);
 }
 app.get('/project', selectProj);
-
 
 
 
